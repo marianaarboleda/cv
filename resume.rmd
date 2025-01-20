@@ -63,7 +63,7 @@ if(params$pdf_mode){
 ```
 
 
-For a longer form version, see my [CV](nickstrayer.me/cv/).
+For a longer form version, see my [CV](https://marianaarboleda.github.io/cv/cv.html).
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -115,25 +115,22 @@ CV <- print_section(CV, 'education')
 ```
 
 
-Selected Industry Experience {data-icon=suitcase data-concise=true}
+
+Selected Projects {data-icon=chart-line data-concise=true}
 --------------------------------------------------------------------------------
 
 
 ```{r}
-CV <- print_section(CV, 'industry_positions')
+CV <- print_section(CV, 'projects')
 ```
 
 
-Selected Data Science Writing {data-icon=chart-line data-concise=true}
+Selected Teaching Experience {data-icon=suitcase data-concise=true}
 --------------------------------------------------------------------------------
 
-```{r}
-CV <- print_section(CV, 'by_me_press')
-```
-
 
 ```{r}
-CV <- print_section(CV, 'data_science_writings')
+CV <- print_section(CV, 'teaching_positions')
 ```
 
 
