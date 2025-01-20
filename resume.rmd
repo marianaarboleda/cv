@@ -133,6 +133,14 @@ Selected Teaching Experience {data-icon=suitcase data-concise=true}
 CV <- print_section(CV, 'teaching_positions')
 ```
 
+Selected Awards, Fellowships, & Grants {data-icon=medal data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV <- print_section(CV, 'awards')
+```
+
+
 
 ```{r}
 print_links(CV)

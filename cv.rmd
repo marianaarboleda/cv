@@ -156,6 +156,12 @@ CV <- print_section(CV, 'teaching_positions')
 <br>
 <br>
 
+Awards, Fellowships, & Grants {data-icon=medal}
+--------------------------------------------------------------------------------
+
+```{r}
+CV <- print_section(CV, 'awards')
+```
 
 
 Selected Publications, Posters, and Talks {data-icon=book}
