@@ -53,7 +53,7 @@ datadrivencv::build_network_logo(CV$entries_data)
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _https://marianaarboleda.github.io/cv/_")
+  cat("View this CV online with links at _https://marianaarboleda.github.io/cv/cv.html_")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/marianaarboleda/cv/raw/main/mariana_cv.pdf)")
 }
@@ -80,9 +80,9 @@ CV |> print_skill_bars()
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+<!-- Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/marianaarboleda/cv](https://github.com/marianaarboleda/cv).
+The source code is available [on github.com/marianaarboleda/cv](https://github.com/marianaarboleda/cv). -->
 
 Last updated on `r Sys.Date()`.
 
@@ -100,7 +100,6 @@ CV <- print_text_block(CV, "intro")
 ```
 
 
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -108,25 +107,8 @@ Education {data-icon=graduation-cap data-concise=true}
 CV <- print_section(CV, 'education')
 ```
 
-
-
-Project and Consulting Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r}
-CV <- print_section(CV, 'projects')
-```
-
-
-
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV <- print_text_block(CV, 'industy_experience_aside')
-```
-:::
 
 ```{r}
 CV <- print_section(CV, 'industry_positions')
@@ -136,6 +118,21 @@ CV <- print_section(CV, 'industry_positions')
 <br>
 <br>
 <br>
+
+
+Project and Consulting Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+::: aside
+```{r}
+CV <- print_text_block(CV, 'projects_aside')
+```
+:::
+
+```{r}
+CV <- print_section(CV, 'projects')
+```
+
+
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -151,10 +148,10 @@ CV <- print_section(CV, 'teaching_positions')
 ```
 
 
-
-
 <br>
 <br>
+
+
 
 Awards, Fellowships, & Grants {data-icon=medal}
 --------------------------------------------------------------------------------

@@ -18,4 +18,4 @@ rmarkdown::render("resume.rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_resume_loc,
-                       output = "resume.pdf")
+                       output = "mariana_resume.pdf")
