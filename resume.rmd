@@ -140,7 +140,7 @@ Selected Publications, Posters, and Talks {data-icon=book data-concise=true}
 CV <- print_section(CV, 'academic_articles')
 ```
 
-Selected Publications {data-icon=medal data-concise=true}
+Selected Awards, Fellowships, & Grants {data-icon=medal data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
